@@ -10,3 +10,4 @@ nltk
 matplotlib
 seaborn
 openai-whisper
+pydub
