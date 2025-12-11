@@ -9,3 +9,4 @@ python-dotenv
 nltk
 matplotlib
 seaborn
+openai-whisper
