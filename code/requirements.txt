@@ -12,3 +12,4 @@ seaborn
 openai-whisper
 pydub
 PyAudio
+audioop-lts
