@@ -11,4 +11,3 @@ matplotlib
 seaborn
 openai-whisper
 pydub
-audioop-lts

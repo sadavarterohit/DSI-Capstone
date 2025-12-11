@@ -32,7 +32,7 @@ if 'models_loaded' not in st.session_state:
 @st.cache_data
 def load_dataset():
     """Load the dataset - exact copy from notebook"""
-    df = pd.read_csv('/Users/aadarsh/Desktop/Detecting-Financial-Fraud-via-NLP-in-Transactions-and-Loan-Applications/data/TeleAntiFraud/cleaned_conversations.csv')
+    df = pd.read_csv('cleaned_conversations.csv')
     return df
 
 # EXACT NOTEBOOK WORKFLOW - Step 2: Text Preprocessing Functions
@@ -242,7 +242,7 @@ def transcribe_audio(audio_file, whisper_model):
 def explain_fraud_type(text, fraud_type):
     """EXACT copy of explain_fraud_type function from notebook"""
     # Load API key from code/.env file - exact same as notebook
-    load_dotenv('/Users/aadarsh/Desktop/Detecting-Financial-Fraud-via-NLP-in-Transactions-and-Loan-Applications/code/.env')
+    load_dotenv('.env')
     
     # Debug: Check if API key is loaded
     api_key = os.getenv('API_KEY')
